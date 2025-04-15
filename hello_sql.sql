@@ -50,3 +50,23 @@ VALUES
     ('Jane Smith', 'CS101-B', 85),
     ('Alice Johnson', 'CS103', 90)
 ;
+
+
+DROP TABLE grade;
+
+SELECT  * FROM course;
+
+SELECT * from course WHERE course_code = 'CS101';
+
+SELECT * from grade WHERE score >= 90;
+
+UPDATE grade SET score = 93 WHERE id;
+
+SELECT * FROM grade;
+
+UPDATE grade SET score = 92 WHERE id = 1;
+
+DELETE  FROM grade WHERE id = 1;
+
+# ALTER TABLE  grade
+# CHANGE score score VARCHAR(8);
