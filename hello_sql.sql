@@ -16,8 +16,8 @@ VALUES
     ('CS103', 'Database')
 ;
 
-SELECT course_name FROM course;
-
+# SELECT course_name FROM course;
+SELECT  * FROM course;
 
 CREATE TABLE section (
                          id VARCHAR(8) NOT NULL,
@@ -60,7 +60,7 @@ SELECT * from course WHERE course_code = 'CS101';
 
 SELECT * from grade WHERE score >= 90;
 
-UPDATE grade SET score = 93 WHERE id;
+UPDATE grade SET score = 93 WHERE id = 1;;
 
 SELECT * FROM grade;
 
